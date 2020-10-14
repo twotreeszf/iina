@@ -235,6 +235,7 @@ struct Preference {
     static let showRemainingTime = Key("showRemainingTime")
     static let timeDisplayPrecision = Key("timeDisplayPrecision")
     static let touchbarShowRemainingTime = Key("touchbarShowRemainingTime")
+    static let copyTimestamp = Key("copyTimestamp")
 
     static let followGlobalSeekTypeWhenAdjustSlider = Key("followGlobalSeekTypeWhenAdjustSlider")
 
@@ -706,6 +707,7 @@ struct Preference {
     .showRemainingTime: false,
     .timeDisplayPrecision: 0,
     .touchbarShowRemainingTime: true,
+    .copyTimestamp: false,
     .enableThumbnailPreview: true,
     .maxThumbnailPreviewCacheSize: 500,
     .enableThumbnailForRemoteFiles: false,

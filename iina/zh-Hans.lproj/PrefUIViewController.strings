@@ -46,6 +46,9 @@
 /* Class = "NSButtonCell"; title = "Show remaining time instead of total duration"; ObjectID = "EAa-gN-8dL"; */
 "EAa-gN-8dL.title" = "显示剩余时间";
 
+/* Class = "NSButtonCell"; title = "Copy timestamp while paused"; ObjectID = "5Cl-Gt-Ig3"; */
+"5Cl-Gt-Ig3.title" = "暂停时拷贝当前时间戳到剪贴板";
+
 /* Class = "NSTextFieldCell"; title = "When entering Picture-in-Picture:"; ObjectID = "EUd-RD-g0T"; */
 "EUd-RD-g0T.title" = "进入「画中画」模式时:";
 

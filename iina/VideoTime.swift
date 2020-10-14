@@ -47,6 +47,15 @@ class VideoTime {
 
     return h_ + m_ + ":" + s_
   }
+  
+  var timestampString: String {
+    get {
+      if self == Constants.Time.infinite {
+        return ""
+      }
+      return String(format: "%02d:%02d:%02d", h, m, s)
+    }
+  }
 
   convenience init?(_ format: String) {
     let split = format.split(separator: ":").map { (seq) -> Int? in

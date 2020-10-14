@@ -81,6 +81,16 @@ extension MainMenuActionHandler {
       player.setSpeed(1)
       player.mainWindow.isFastforwarding = false
     }
+    
+    if Preference.bool(for: .copyTimestamp) {
+      guard let pos = player.info.videoPosition else {
+        Logger.fatal("video info not available")
+      }
+      let timestamp = pos.timestampString
+      let pasteboard = NSPasteboard.general
+      pasteboard.declareTypes([.string], owner: nil)
+      pasteboard.setString(timestamp, forType: .string)
+    }
   }
 
   @objc func menuStop(_ sender: NSMenuItem) {
